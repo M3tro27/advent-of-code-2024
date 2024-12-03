@@ -1,8 +1,8 @@
-from source import file_load
+from helpers import file_open
+
+lines = file_open("input.txt", "   ")
 
 ############### PART ONE
-
-lines = file_load("input.txt")
 
 data = list(zip(sorted(int(l) for l,_ in lines), sorted(int(r) for _,r in lines)))
 
