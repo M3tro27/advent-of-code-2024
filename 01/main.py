@@ -2,7 +2,11 @@ from helpers import file_open
 
 lines = file_open("input.txt", "   ")
 
-############### PART ONE
+print("""
+###################
+#     PART ONE    #
+###################
+""")
 
 data = list(zip(sorted(int(l) for l,_ in lines), sorted(int(r) for _,r in lines)))
 
@@ -10,7 +14,11 @@ difference_sum = sum(abs(l-r) for l, r in data)
 
 print(f"Difference sum: {difference_sum}\n")
 
-############### PART TWO
+print("""
+###################
+#     PART TWO    #
+###################
+""")
 
 from collections import Counter
 
