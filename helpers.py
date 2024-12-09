@@ -7,3 +7,8 @@ Returns a string with replaced character on certain index.
 """
 def replace_char_in_string(string, index, char):
     return string[:index] + char + string[index + 1:]
+
+def print_picture(lst):
+    for line in lst:
+        print(line)
+    print("\n")
